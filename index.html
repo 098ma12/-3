@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="ja">
+      <head>
+        <meta charset="utf-8">
+        <title>ストップウォッチ</title>
+        <link rel="stylesheet" href="style.css">
+        
+   　
+      </head>
+    
+
+	
+<form name="myForm">
+<table >
+<tr>
+
+</tr>
+<tr>
+<td colspan="3"><input type="text" size="15" name="myLine" value="0"></td>
+<td align="center"><input type="button" value="Ｃ" onclick="myC()"></td>
+</tr>
+<tr>
+<td align="center"><input type="button" value=" ７ " onclick="myValue(7)"></td>
+<td align="center"><input type="button" value=" ８ " onclick="myValue(8)"></td>
+<td align="center"><input type="button" value=" ９ " onclick="myValue(9)"></td>
+<td align="center"><input type="button" value="÷" onclick="myCalculate('/')"></td>
+</tr>
+<tr>
+<td align="center"><input type="button" value=" ４ " onclick="myValue(4)"></td>
+<td align="center"><input type="button" value=" ５ " onclick="myValue(5)"></td>
+<td align="center"><input type="button" value=" ６ " onclick="myValue(6)"></td>
+<td align="center"><input type="button" value="×" onclick="myCalculate('*')"></td>
+</tr>
+<tr>
+<td align="center"><input type="button" value=" １ " onclick="myValue(1)"></td>
+<td align="center"><input type="button" value=" ２ " onclick="myValue(2)"></td>
+<td align="center"><input type="button" value=" ３ " onclick="myValue(3)"></td>
+<td align="center"><input type="button" value="－" onclick="myCalculate('-')"></td>
+</tr>
+<tr>
+<td align="center"><input type="button" value=" ０ " onclick="zero(0)"></td>
+<td align="center"><input type="button" value=" ・ " onclick="myValue('.')"></td>
+<td align="center"><input type="button" value=" ＋ " onclick="myCalculate('+')"></td>
+<td align="center"><input type="button" value="＝" onclick="myCalculate('=')"></td>
+</tr>
+</table>
+</form>
+     
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="test.js"></script>
+
+        
+        
+
+    </body>
+    </html>
