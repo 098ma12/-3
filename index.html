@@ -10,42 +10,57 @@
     
 
 	
-<form name="myForm">
-<table >
-<tr>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>電卓</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+   <div class="caluculate">
+    <div class="wrapper">
+      <div id="number-text">0</div>
+    </div>
+    <div class="other-btns">
+      <button id="clear-btn">CLEAR</button>
+    </div>
+    <div id="btns">
+      <div id="num-btns">
+        <table>
+            <tr>
+                 <button id="number">7</button>
+                 <button id="number">8</button>
+                 <button id="number">9</button>
+            </tr>
+            <tr>
+                 <button id="number">4</button>
+                 <button id="number">5</button>
+                 <button id="number">6</button>
+            </tr>
+        </table>  
+       
+        
+        <button id="number">1</button>
+        <button id="number">2</button>
+        <button id="number">3</button>
+        <button name="zero" id="zero">0</button>
+        <button name="equal" id="calc">=</button>
+      </div>
 
-</tr>
-<tr>
-<td colspan="3"><input type="text" size="15" name="myLine" value="0"></td>
-<td align="center"><input type="button" value="Ｃ" onclick="myC()"></td>
-</tr>
-<tr>
-<td align="center"><input type="button" value=" ７ " onclick="myValue(7)"></td>
-<td align="center"><input type="button" value=" ８ " onclick="myValue(8)"></td>
-<td align="center"><input type="button" value=" ９ " onclick="myValue(9)"></td>
-<td align="center"><input type="button" value="÷" onclick="myCalculate('/')"></td>
-</tr>
-<tr>
-<td align="center"><input type="button" value=" ４ " onclick="myValue(4)"></td>
-<td align="center"><input type="button" value=" ５ " onclick="myValue(5)"></td>
-<td align="center"><input type="button" value=" ６ " onclick="myValue(6)"></td>
-<td align="center"><input type="button" value="×" onclick="myCalculate('*')"></td>
-</tr>
-<tr>
-<td align="center"><input type="button" value=" １ " onclick="myValue(1)"></td>
-<td align="center"><input type="button" value=" ２ " onclick="myValue(2)"></td>
-<td align="center"><input type="button" value=" ３ " onclick="myValue(3)"></td>
-<td align="center"><input type="button" value="－" onclick="myCalculate('-')"></td>
-</tr>
-<tr>
-<td align="center"><input type="button" value=" ０ " onclick="zero(0)"></td>
-<td align="center"><input type="button" value=" ・ " onclick="myValue('.')"></td>
-<td align="center"><input type="button" value=" ＋ " onclick="myCalculate('+')"></td>
-<td align="center"><input type="button" value="＝" onclick="myCalculate('=')"></td>
-</tr>
-</table>
-</form>
-     
+
+      <div id="symbol-btns">
+        <button name="symbol" id="calc">/</button>
+        <button name="symbol" id="calc">*</button>
+        <button name="symbol" id="calc">-</button>
+        <button name="symbol" id="calc">+</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript"  src="jquery-3.6.0.min.js" charset="utf-8"></script>
+</body>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javascript" src="test.js"></script>
 
